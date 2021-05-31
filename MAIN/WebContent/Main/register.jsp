@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<link rel="stylesheet" type="text/css" media="screen" href="DBdesign.css"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +8,15 @@
 <title>회원가입</title>
 </head>
 <body>
-	<table width="75%" align="center" bgcolor="#FFFF99" border>
+	<a href="main.jsp"><img id = "homeimage" src="../image/sym_rec.png"></a>
+	<%@ include file="top.jsp" %>
+	<br>
+	<table width="50%" align="center" bgcolor="#eeeeee" border>
 		<tr>
 			<td><div align="center">회원정보를 입력하세요</div></td>
 		</tr>
 	</table>
-	<table width="75%" align="center" border>
+	<table width="50%" align="center" border>
 		<form method="post" action="register_verify.jsp">
 			<tr>
 				<td><div align="center">아이디</div></td>
@@ -39,4 +43,4 @@
 		</form>
 	</table>
 </body>
-</html> 
+</html>

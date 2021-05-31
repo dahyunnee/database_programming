@@ -5,10 +5,11 @@
 		<title>수강신청 입력</title>
 	</head>
 <body>
+	<a href="../Main/main.jsp"><img id = "homeimage" src="../image/sym_rec.png"></a>
 <%@ include file="../Main/top.jsp" %>
 <% 	
 	request.setCharacterEncoding("UTF-8");
-	if (session_id==null) response.sendRedirect("login.jsp");  
+	if (session_id==null) response.sendRedirect("../Main/login.jsp");  
 %>
 <table width="75%" align="center" border>
 <br>
@@ -28,7 +29,7 @@
     } catch(SQLException ex) {
 	     System.err.println("SQLException: " + ex.getMessage());
     }
-mySQL = "select c_id,c_id_no,c_name,c_unit,c_class from course where c_id not in (select c_id from enroll where s_id='" + session_id + "')";
+mySQL = "select c_id,c_id_no,c_name,c_unit,c_class from course";
 	
 myResultSet = stmt.executeQuery(mySQL);
 

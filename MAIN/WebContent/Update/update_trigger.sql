@@ -10,7 +10,6 @@ DECLARE
     nBlank NUMBER;
 
 BEGIN
-   
     SELECT length(:new.s_pwd), instr(:new.s_pwd,' ')
     INTO nLength, nBlank
     FROM dual;

@@ -2,7 +2,6 @@
 <%@ page import="java.sql.*"  %>
 <%@ page import="java.util.*" %>
 <%@ page import="java.io.*" %>
-<%@ include file="../Main/top.jsp" %>
 
 <!DOCTYPE html>
 <html>
@@ -11,9 +10,11 @@
 <title>수강신청 삭제</title>
 </head>
 <body>
+	<a href="../Main/main.jsp"><img id = "homeimage" src="../image/sym_rec.png"></a>
+<%@ include file="../Main/top.jsp" %>
 <% 	
 	request.setCharacterEncoding("UTF-8");
-	if (session_id==null) response.sendRedirect("login.jsp");  
+	if (session_id==null) response.sendRedirect("../Main/login.jsp");  
 %>
 	<br>
 	<table width="75%" align="center" border="1">

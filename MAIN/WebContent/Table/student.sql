@@ -9,7 +9,7 @@ CREATE TABLE student(	--학생테이블
 	s_major VARCHAR2(30)  --전공필드 제가 넣었어요!!
 	
 );
-select * from student;
+
 
 INSERT INTO student VALUES('1818181', 'abcdefg','서울','컴퓨터과학과');
 INSERT INTO student VALUES ('1400000', 'abcde','대전', '법학과');
