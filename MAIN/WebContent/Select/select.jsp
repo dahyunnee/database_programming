@@ -6,6 +6,7 @@
 
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" media="screen" href="../Main/DBdesign.css"/>
 <head> 
 	<meta charset="UTF-8">
 	<title>수강신청 조회</title>
